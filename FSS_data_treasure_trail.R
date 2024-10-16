@@ -29,7 +29,9 @@
 
 # The data treasure trail
 
-# Task 1) import the iris dataset
+# Task 1) import the iris dataset # Completed by Juliet Bowater, 16/10/2024
+data(iris)
+head(iris)
 
 # Task 2) how many rows are there in the dataset?
 

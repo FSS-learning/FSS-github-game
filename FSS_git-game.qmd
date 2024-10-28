@@ -1,0 +1,88 @@
+---
+title: "Git-Game"
+author: "Kevin De Luca & Juliet Bowater"
+format: html
+editor: visual
+---
+
+## Introduction
+
+Hello! Thanks for taking part in the FSS GitHub Game! Git versioning can be thought of as a slightly more technical version of working with online documents like Google Docs. It allows different users to work on the same project, check that the changes that they make to files do not conflict with the changes that others have made, and see what changes have been made to files over time.
+
+## Requirements
+
+Before starting, you must have fulfilled the following conditions using the manual provided in teams: [241024_Intro_Quarto,GitHub & Git.pptx](Git-Quarto-Manual)
+
+-   you should have a GitHub Account
+
+-   you are a collaborator of the FSS-github-game repo via invitation
+
+-   you created your branch with your name
+
+-   you have a local copy/clone of the repo (via git and version control) saved as a project
+
+## Workflow
+
+Follow the instructions below for each task.
+
+1.  Open the file "FSS-github-game.Rproj" first in Explorer
+
+2.  Open the Document "FSS_git-game.qmd" via the tab "Files" on your right bottom side
+
+3.  Choose your branch: In RStudio, choose the tab "Git" in the Environments-Window (window top right). Within the tab on top right you can choose your branch via the dropdown menu.
+
+4.  Practice "pulling" your branch from github, to make sure that you are working on the latest version of the document (remember that other people can work on it too!) --\> on your right under tab "Git" press "Pull"
+
+5.  Complete the next step of the data treasure trail below. Write your name and "Done!" next to it, so that the next person can quickly see what needs to be done next. Not that in the real world this is not required, since Git keeps track of who made which changes and when (see the playfully-named command "git blame" for more info).
+
+6.  Review your result by
+
+7.  Stage and then commit your changes, with a clear commit message
+
+8.  Push your branch back to github
+
+9.  Create a merge request and wait for Kevin or Juliet to approve your changes to the main branch!
+
+NOTE: If you do not know how to do a step, ping Juliet for the code solution. The purpose of the task is for you to learn how to use GitHub, not to struggle with R data analysis.
+
+## The Game - The data treasure trail
+
+Taks 1
+
+```{r}
+
+data(iris)
+
+head(iris)
+
+```
+
+Task 2
+
+Task 3
+
+Task 4
+
+Task 5
+
+Task 6
+
+Task 7
+
+Task 8
+
+Task 9
+
+Task 10
+
+import the iris dataset \# Completed by Juliet Bowater, 16/10/2024
+
+\# Task 2) how many rows are there in the dataset?
+
+\# Task 3) what is the mean of comumn \[x\]?
+
+\# Task 4) create a simple plot of the data
+
+\# Task 5) import the farm data
+
+\# Task 6) add another row to the farm data; farm_id="f9", area_hectares=5, product="milk"

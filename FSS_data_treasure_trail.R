@@ -42,3 +42,5 @@ head(iris)
 # Task 5) import the farm data
 
 # Task 6) add another row to the farm data; farm_id="f9", area_hectares=5, product="milk" 
+
+dfadg

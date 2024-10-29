@@ -5,6 +5,12 @@ format: html
 editor: visual
 ---
 
+```{r}
+#| label: Setup
+#| echo: false
+options(repos = c(CRAN = "https://cran.rstudio.com/"))
+```
+
 ## Introduction
 
 Hello! Thanks for taking part in the FSS GitHub Game! Git versioning can be thought of as a slightly more technical version of working with online documents like Google Docs. It allows different users to work on the same project, check that the changes that they make to files do not conflict with the changes that others have made, and see what changes have been made to files over time.
@@ -27,27 +33,31 @@ Follow the instructions below for each task.
 
 1.  Open the file "FSS-github-game.Rproj" first in Explorer
 
-2.  Open the Document "FSS_git-game.qmd" via the tab "Files" on your right bottom side
+2.  Open the Document "FSS_git-game.qmd" via the tab "Files" on your right bottom side. Make sure, that you are in "Visual" mode (top left of this window).
 
 3.  Choose your branch: In RStudio, choose the tab "Git" in the Environments-Window (window top right). Within the tab on top right you can choose your branch via the dropdown menu.
 
 4.  Practice "pulling" your branch from github, to make sure that you are working on the latest version of the document (remember that other people can work on it too!) --\> on your right under tab "Git" press "Pull"
 
-5.  Complete the next step of the data treasure trail below. Write your name and "Done!" next to it, so that the next person can quickly see what needs to be done next. Not that in the real world this is not required, since Git keeps track of who made which changes and when (see the playfully-named command "git blame" for more info).
+5.  Complete the next open task.
 
-6.  Review your result by
+6.  Write "\# Completed by \[your name\], \[dd/mm/yyyy\]" next to the titel, so that the next person can quickly see what needs to be done next (cf. Task 1). Not that in the real world this is not required, since Git keeps track of who made which changes and when (see the playfully-named command "git blame" for more info).
 
-7.  Stage and then commit your changes, with a clear commit message
+7.  Review your result by pressing "Render" ![](https://quarto.org/docs/get-started/hello/images/rstudio-render-button.png){width="21" height="18"} in this Source-Window (top left)
 
-8.  Push your branch back to github
+8.  Stage and then commit your changes, with a clear commit message
 
-9.  Create a merge request and wait for Kevin or Juliet to approve your changes to the main branch!
+9.  Push your branch back to github
+
+10. Create a merge request and wait for Kevin or Juliet to approve your changes to the main branch!
 
 NOTE: If you do not know how to do a step, ping Juliet for the code solution. The purpose of the task is for you to learn how to use GitHub, not to struggle with R data analysis.
 
 ## The Game - The data treasure trail
 
-Taks 1
+### Taks 1: Data import \# Completed by Juliet Bowater, 16/10/2024
+
+-   import the iris dataset
 
 ```{r}
 
@@ -57,32 +67,97 @@ head(iris)
 
 ```
 
-Task 2
+Task 2: Formatting
 
-Task 3
+To the left of the Source/Editor/Script window (this (top left) window you can see the outline of the script (if not, press "Outline" in the top right corner of this window). Unfortunately, task 2 and the following ones are not visible because they have no header format.
 
-Task 4
+-   change the format of the title of all tasks (Task 2, Task 3, ...) into "Header 3" (similar to Task 1). The setting can be found on the top of this window.
 
-Task 5
+As a result, you will see the titles appearing in the section "Outline" according to their hierarchy (right side of this window).
 
-Task 6
+Task 3: Insert code chunks
+
+The code chunk is missing in the following tasks (cf. task 1). Add one wherever it says \[code chunk\]. You will find the command for this in the top right of this window (green button)
+
+\[code chunk\]
+
+Task 4: Meet the penguins
+
+The following tasks deal with the `penguins` data from the [**palmerpenguins**](https://allisonhorst.github.io/palmerpenguins "palmerpenguins R package") package and contains size measurements for penguins from three species observed on three islands in the Palmer Archipelago, Antarctica.
+
+But before we take a closer look at the data set, let's first say hello to the penguins and make the document a little less dull.
+
+-   Add a picture of the penguins below by adding an Image. To do so, first, click at the end of Task 4 where you want to insert the image. Then, press "Figure / Image..." from the toolbar above.
+
+-   the image window will pop up. Add this adress to the URL and click "Ok": `https://raw.githubusercontent.com/quarto-dev/quarto-web/main/docs/get-started/hello/rstudio/lter_penguins.png`
+
+Task 5: Code chunk options
+
+By using `#| label: plot-penguins`, you're naming the chunk "plot-penguins." This label can be used to link to the chunk elsewhere in your document or track which chunk produced an error in case one occurs.
+
+Setting `#| warning: false` suppresses any warnings that might appear in this chunk, keeping the output cleaner if you expect some non-critical warnings.
+
+I have already added the first option in the following chunk code.
+
+-   Replace the first option with the other option presented (warning). Have a look at the visual result by opening the document via 'Render'.
+
+```{=html}
+<!-- -->
+```
+-   Before completing the task, add both options one below the other in the code chunk below.
+
+```{r}
+#| label: plot-penguins
+
+if (!requireNamespace("palmerpenguins", quietly = TRUE)) {
+    install.packages("palmerpenguins")
+}
+library(palmerpenguins)
+
+head(penguins)
+```
+
+Task 6: Hide the code
+
+Setting `#| echo: false` hides the code from the final output, only displaying the results (like a plot or table). This is often used when you want to show only the result to readers, without exposing the underlying code.
+
+-   Run the code below and press "Render" to see the Output.
+
+-   If we want to use Quarto as a report, we may not always want to see the code in the output. To display only the graphic, add `#| echo: false` below `#| warning: false`. Look at the result without code.
+
+```{r}
+#| warning: false
+
+if (!requireNamespace("palmerpenguins", quietly = TRUE)) {
+    install.packages("palmerpenguins")
+}
+library(tidyverse)
+
+ggplot(penguins, 
+       aes(x = flipper_length_mm, y = bill_length_mm)) +
+  geom_point(aes(color = species, shape = species)) +
+  scale_color_manual(values = c("darkorange","purple","cyan4")) +
+  labs(
+    title = "Flipper and bill length",
+    subtitle = "Dimensions for penguins at Palmer Station LTER",
+    x = "Flipper length (mm)", y = "Bill length (mm)",
+    color = "Penguin species", shape = "Penguin species"
+  ) +
+  theme_minimal()
+
+
+```
 
 Task 7
 
+\[code chunk\]
+
 Task 8
+
+\[code chunk\]
 
 Task 9
 
+\[code chunk\]
+
 Task 10
-
-import the iris dataset \# Completed by Juliet Bowater, 16/10/2024
-
-\# Task 2) how many rows are there in the dataset?
-
-\# Task 3) what is the mean of comumn \[x\]?
-
-\# Task 4) create a simple plot of the data
-
-\# Task 5) import the farm data
-
-\# Task 6) add another row to the farm data; farm_id="f9", area_hectares=5, product="milk"

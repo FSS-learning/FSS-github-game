@@ -11,7 +11,7 @@
 # 1) Create a branch (copy) of the FSS game GitHub repo on GitHub
 # 2) Clone your branch to your computer
 # 3) Practice "pulling" your branch from github, to make sure that you are working on 
-#    the latest version of the document (remember that other people can work on it 
+#    the latest version of the project (remember that other people can work on it 
 #    too!)
 # 4) Complete the next step of the data treasure trail below. 
 #    Write your name and "Done!" next to it, so that the next person can quickly

@@ -41,7 +41,7 @@ Follow the instructions below for each task.
 
 5.  Complete the next open task.
 
-6.  Write "\# Completed by \[your name\], \[dd/mm/yyyy\]" next to the titel, so that the next person can quickly see what needs to be done next (cf. Task 1). Not that in the real world this is not required, since Git keeps track of who made which changes and when (see the playfully-named command "git blame" for more info).
+6.  Write "\# Completed by \[your name\], \[dd/mm/yyyy\]" next to the title, so that the next person can quickly see what needs to be done next (cf. Task 1). Not that in the real world this is not required, since Git keeps track of who made which changes and when (see the playfully-named command "git blame" for more info).
 
 7.  Review your result by pressing "Render" ![](https://quarto.org/docs/get-started/hello/images/rstudio-render-button.png){width="21" height="18"} in this Source-Window (top left)
 
@@ -89,7 +89,7 @@ But before we take a closer look at the data set, let's first say hello to the p
 
 -   Add a picture of the penguins below by adding an Image. To do so, first, click at the end of Task 4 where you want to insert the image. Then, press "Figure / Image..." from the toolbar above.
 
--   the image window will pop up. Add this adress to the URL and click "Ok": `https://raw.githubusercontent.com/quarto-dev/quarto-web/main/docs/get-started/hello/rstudio/lter_penguins.png`
+-   the image window will pop up. Add this address to the URL and click "OK": `https://raw.githubusercontent.com/quarto-dev/quarto-web/main/docs/get-started/hello/rstudio/lter_penguins.png`
 
 Task 5: Code chunk options
 
@@ -101,9 +101,8 @@ I have already added the first option in the following chunk code.
 
 -   Replace the first option with the other option presented (warning). Have a look at the visual result by opening the document via 'Render'.
 
-```{=html}
 <!-- -->
-```
+
 -   Before completing the task, add both options one below the other in the code chunk below.
 
 ```{r}

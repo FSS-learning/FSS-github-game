@@ -75,11 +75,15 @@ To the left of the Source/Editor/Script window (this (top left) window you can s
 
 As a result, you will see the titles appearing in the section "Outline" according to their hierarchy (right side of this window).
 
-### Task 3: Insert code chunks
+### Task 3: Insert code chunks \# Completed by Florian Hediger, 7/11/2024
 
 The code chunk is missing in the following tasks (cf. task 1). Add one wherever it says \[code chunk\]. You will find the command for this in the top right of this window (green button)
 
-\[code chunk\]
+```{r my new code chunk}
+
+print("Hello World!")
+
+```
 
 ### Task 4: Meet the penguins
 

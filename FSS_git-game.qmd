@@ -67,7 +67,7 @@ head(iris)
 
 ```
 
-Task 2: Formatting
+### Task 2: Formatting \# Completed by Adrian Müller, 6/11/2024
 
 To the left of the Source/Editor/Script window (this (top left) window you can see the outline of the script (if not, press "Outline" in the top right corner of this window). Unfortunately, task 2 and the following ones are not visible because they have no header format.
 
@@ -75,13 +75,13 @@ To the left of the Source/Editor/Script window (this (top left) window you can s
 
 As a result, you will see the titles appearing in the section "Outline" according to their hierarchy (right side of this window).
 
-Task 3: Insert code chunks
+### Task 3: Insert code chunks
 
 The code chunk is missing in the following tasks (cf. task 1). Add one wherever it says \[code chunk\]. You will find the command for this in the top right of this window (green button)
 
 \[code chunk\]
 
-Task 4: Meet the penguins
+### Task 4: Meet the penguins
 
 The following tasks deal with the `penguins` data from the [**palmerpenguins**](https://allisonhorst.github.io/palmerpenguins "palmerpenguins R package") package and contains size measurements for penguins from three species observed on three islands in the Palmer Archipelago, Antarctica.
 
@@ -91,7 +91,7 @@ But before we take a closer look at the data set, let's first say hello to the p
 
 -   the image window will pop up. Add this address to the URL and click "OK": `https://raw.githubusercontent.com/quarto-dev/quarto-web/main/docs/get-started/hello/rstudio/lter_penguins.png`
 
-Task 5: Code chunk options
+### Task 5: Code chunk options
 
 By using `#| label: plot-penguins`, you're naming the chunk "plot-penguins." This label can be used to link to the chunk elsewhere in your document or track which chunk produced an error in case one occurs.
 
@@ -116,7 +116,7 @@ library(palmerpenguins)
 head(penguins)
 ```
 
-Task 6: Hide the code
+### Task 6: Hide the code
 
 Setting `#| echo: false` hides the code from the final output, only displaying the results (like a plot or table). This is often used when you want to show only the result to readers, without exposing the underlying code.
 
@@ -147,16 +147,16 @@ ggplot(penguins,
 
 ```
 
-Task 7
+### Task 7
 
 \[code chunk\]
 
-Task 8
+### Task 8
 
 \[code chunk\]
 
-Task 9
+### Task 9
 
 \[code chunk\]
 
-Task 10
+### Task 10

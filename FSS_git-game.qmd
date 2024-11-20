@@ -85,7 +85,7 @@ print("Hello World!")
 
 ```
 
-### Task 4: Meet the penguins xxx
+### Task 4: Meet the penguins \# completed by Eva Augustiny 20/11/2024
 
 The following tasks deal with the `penguins` data from the [**palmerpenguins**](https://allisonhorst.github.io/palmerpenguins "palmerpenguins R package") package and contains size measurements for penguins from three species observed on three islands in the Palmer Archipelago, Antarctica.
 
@@ -94,6 +94,8 @@ But before we take a closer look at the data set, let's first say hello to the p
 -   Add a picture of the penguins below by adding an Image. To do so, first, click at the end of Task 4 where you want to insert the image. Then, press "Figure / Image..." from the toolbar above.
 
 -   the image window will pop up. Add this address to the URL and click "OK": `https://raw.githubusercontent.com/quarto-dev/quarto-web/main/docs/get-started/hello/rstudio/lter_penguins.png`
+
+![](https://raw.githubusercontent.com/quarto-dev/quarto-web/main/docs/get-started/hello/rstudio/lter_penguins.png)
 
 ### Task 5: Code chunk options
 
